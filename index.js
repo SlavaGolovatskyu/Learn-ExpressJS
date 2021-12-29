@@ -6,7 +6,7 @@ import router from "./routes/api-v1.0.js";
 const { parsed: process } = dotenv.config();
 const PORT = process.PORT || 3000;
 
-axios.defaults.baseURL = `http://localhost:${PORT || 3000}`;
+axios.defaults.baseURL = `http://localhost:${PORT}`;
 
 const app = express();
 
